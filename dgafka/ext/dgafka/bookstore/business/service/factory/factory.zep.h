@@ -1,0 +1,9 @@
+
+extern zend_class_entry *dgafka_bookstore_business_service_factory_factory_ce;
+
+ZEPHIR_INIT_CLASS(Dgafka_BookStore_Business_Service_Factory_Factory);
+
+ZEPHIR_INIT_FUNCS(dgafka_bookstore_business_service_factory_factory_method_entry) {
+	PHP_ABSTRACT_ME(Dgafka_BookStore_Business_Service_Factory_Factory, create, NULL)
+  PHP_FE_END
+};

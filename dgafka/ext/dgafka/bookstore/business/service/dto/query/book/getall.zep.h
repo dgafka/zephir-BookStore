@@ -1,0 +1,5 @@
+
+extern zend_class_entry *dgafka_bookstore_business_service_dto_query_book_getall_ce;
+
+ZEPHIR_INIT_CLASS(Dgafka_BookStore_Business_Service_Dto_Query_Book_GetAll);
+

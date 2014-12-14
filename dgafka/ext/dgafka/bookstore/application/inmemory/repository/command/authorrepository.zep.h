@@ -1,0 +1,17 @@
+
+extern zend_class_entry *dgafka_bookstore_application_inmemory_repository_command_authorrepository_ce;
+
+ZEPHIR_INIT_CLASS(Dgafka_BookStore_Application_InMemory_Repository_Command_AuthorRepository);
+
+PHP_METHOD(Dgafka_BookStore_Application_InMemory_Repository_Command_AuthorRepository, __construct);
+PHP_METHOD(Dgafka_BookStore_Application_InMemory_Repository_Command_AuthorRepository, save);
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_application_inmemory_repository_command_authorrepository_save, 0, 0, 1)
+	ZEND_ARG_OBJ_INFO(0, author, Dgafka\\BookStore\\Business\\Model\\Entity\\Author, 0)
+ZEND_END_ARG_INFO()
+
+ZEPHIR_INIT_FUNCS(dgafka_bookstore_application_inmemory_repository_command_authorrepository_method_entry) {
+	PHP_ME(Dgafka_BookStore_Application_InMemory_Repository_Command_AuthorRepository, __construct, NULL, ZEND_ACC_PUBLIC|ZEND_ACC_CTOR)
+	PHP_ME(Dgafka_BookStore_Application_InMemory_Repository_Command_AuthorRepository, save, arginfo_dgafka_bookstore_application_inmemory_repository_command_authorrepository_save, ZEND_ACC_PUBLIC)
+  PHP_FE_END
+};

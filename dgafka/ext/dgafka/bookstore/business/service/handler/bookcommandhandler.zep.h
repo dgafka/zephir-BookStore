@@ -1,0 +1,51 @@
+
+extern zend_class_entry *dgafka_bookstore_business_service_handler_bookcommandhandler_ce;
+
+ZEPHIR_INIT_CLASS(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler);
+
+PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, __construct);
+PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleCreateCommand);
+PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleChangeAuthorCommand);
+PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleRemoveCommand);
+PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleChangeInformationCommand);
+PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, setBookFactory);
+PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, setAuthorRepository);
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler___construct, 0, 0, 1)
+	ZEND_ARG_OBJ_INFO(0, repository, Dgafka\\BookStore\\Business\\Service\\Repository\\Command\\BookRepository, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_handlecreatecommand, 0, 0, 1)
+	ZEND_ARG_OBJ_INFO(0, command, Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\CreateCommand, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_handlechangeauthorcommand, 0, 0, 1)
+	ZEND_ARG_OBJ_INFO(0, command, Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\ChangeAuthorCommand, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_handleremovecommand, 0, 0, 1)
+	ZEND_ARG_OBJ_INFO(0, command, Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\RemoveCommand, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_handlechangeinformationcommand, 0, 0, 1)
+	ZEND_ARG_OBJ_INFO(0, command, Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\ChangeInformationCommand, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_setbookfactory, 0, 0, 1)
+	ZEND_ARG_OBJ_INFO(0, bookFactory, Dgafka\\BookStore\\Business\\Service\\Factory\\Book, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_setauthorrepository, 0, 0, 1)
+	ZEND_ARG_OBJ_INFO(0, repository, Dgafka\\BookStore\\Business\\Service\\Repository\\Query\\AuthorRepository, 0)
+ZEND_END_ARG_INFO()
+
+ZEPHIR_INIT_FUNCS(dgafka_bookstore_business_service_handler_bookcommandhandler_method_entry) {
+	PHP_ME(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, __construct, arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler___construct, ZEND_ACC_PUBLIC|ZEND_ACC_CTOR)
+	PHP_ME(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleCreateCommand, arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_handlecreatecommand, ZEND_ACC_PUBLIC)
+	PHP_ME(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleChangeAuthorCommand, arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_handlechangeauthorcommand, ZEND_ACC_PUBLIC)
+	PHP_ME(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleRemoveCommand, arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_handleremovecommand, ZEND_ACC_PUBLIC)
+	PHP_ME(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleChangeInformationCommand, arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_handlechangeinformationcommand, ZEND_ACC_PUBLIC)
+	PHP_ME(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, setBookFactory, arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_setbookfactory, ZEND_ACC_PUBLIC)
+	PHP_ME(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, setAuthorRepository, arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_setauthorrepository, ZEND_ACC_PUBLIC)
+  PHP_FE_END
+};

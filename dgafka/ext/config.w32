@@ -1,0 +1,26 @@
+ARG_ENABLE("dgafka", "enable dgafka", "no");
+
+if (PHP_DGAFKA != "no") {
+  EXTENSION("dgafka", "dgafka.c", null, "-I"+configure_module_dirname);
+  ADD_SOURCES(configure_module_dirname + "/kernel", "main.c memory.c exception.c hash.c debug.c backtrace.c object.c array.c string.c fcall.c require.c file.c operators.c concat.c variables.c filter.c iterator.c exit.c", "dgafka");
+  ADD_SOURCES(configure_module_dirname + "/kernel/extended", "array.c", "dgafka");
+  
+  ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/application/inmemory/repository/command", "authorrepository.zep.c bookrepository.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/application/inmemory/repository/query", "authorrepository.zep.c bookrepository.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/model/entity", "author.zep.c book.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/dto", "author.zep.c authorcollection.zep.c book.zep.c bookcollection.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/dto/command/author", "createcommand.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/dto/command/book", "changeauthorcommand.zep.c changeinformationcommand.zep.c createcommand.zep.c removecommand.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/dto/query/author", "getbyidquery.zep.c getbyquery.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/dto/query/book", "getbyidquery.zep.c getbyquery.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/factory", "author.zep.c book.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/handler", "authorcommandhandler.zep.c authorqueryhandler.zep.c bookcommandhandler.zep.c bookqueryhandler.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/handler/exception", "dependencyinjectionexception.zep.c notfoundexception.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/repository/command", "authorrepository.zep.c bookrepository.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/repository/query", "authorrepository.zep.c bookrepository.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/service", "commandquerybus.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/service/converter/author", "entitytodto.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/service/converter/book", "entitytodto.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/service/exception", "classnotfoundexception.zep.c", "dgafka");
+  ADD_FLAG("CFLAGS_DGAFKA", "/D ZEPHIR_RELEASE");
+}

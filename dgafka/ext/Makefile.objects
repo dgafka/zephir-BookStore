@@ -1,0 +1,116 @@
+dgafka.lo: /vagrant_data/BookStore/dgafka/ext/dgafka.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka.c -o dgafka.lo 
+kernel/main.lo: /vagrant_data/BookStore/dgafka/ext/kernel/main.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/main.c -o kernel/main.lo 
+kernel/memory.lo: /vagrant_data/BookStore/dgafka/ext/kernel/memory.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/memory.c -o kernel/memory.lo 
+kernel/exception.lo: /vagrant_data/BookStore/dgafka/ext/kernel/exception.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/exception.c -o kernel/exception.lo 
+kernel/hash.lo: /vagrant_data/BookStore/dgafka/ext/kernel/hash.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/hash.c -o kernel/hash.lo 
+kernel/debug.lo: /vagrant_data/BookStore/dgafka/ext/kernel/debug.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/debug.c -o kernel/debug.lo 
+kernel/backtrace.lo: /vagrant_data/BookStore/dgafka/ext/kernel/backtrace.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/backtrace.c -o kernel/backtrace.lo 
+kernel/object.lo: /vagrant_data/BookStore/dgafka/ext/kernel/object.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/object.c -o kernel/object.lo 
+kernel/array.lo: /vagrant_data/BookStore/dgafka/ext/kernel/array.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/array.c -o kernel/array.lo 
+kernel/extended/array.lo: /vagrant_data/BookStore/dgafka/ext/kernel/extended/array.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/extended/array.c -o kernel/extended/array.lo 
+kernel/string.lo: /vagrant_data/BookStore/dgafka/ext/kernel/string.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/string.c -o kernel/string.lo 
+kernel/fcall.lo: /vagrant_data/BookStore/dgafka/ext/kernel/fcall.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/fcall.c -o kernel/fcall.lo 
+kernel/require.lo: /vagrant_data/BookStore/dgafka/ext/kernel/require.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/require.c -o kernel/require.lo 
+kernel/file.lo: /vagrant_data/BookStore/dgafka/ext/kernel/file.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/file.c -o kernel/file.lo 
+kernel/operators.lo: /vagrant_data/BookStore/dgafka/ext/kernel/operators.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/operators.c -o kernel/operators.lo 
+kernel/concat.lo: /vagrant_data/BookStore/dgafka/ext/kernel/concat.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/concat.c -o kernel/concat.lo 
+kernel/variables.lo: /vagrant_data/BookStore/dgafka/ext/kernel/variables.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/variables.c -o kernel/variables.lo 
+kernel/filter.lo: /vagrant_data/BookStore/dgafka/ext/kernel/filter.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/filter.c -o kernel/filter.lo 
+kernel/iterator.lo: /vagrant_data/BookStore/dgafka/ext/kernel/iterator.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/iterator.c -o kernel/iterator.lo 
+kernel/exit.lo: /vagrant_data/BookStore/dgafka/ext/kernel/exit.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/kernel/exit.c -o kernel/exit.lo 
+dgafka/bookstore/application/inmemory/repository/command/authorrepository.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/application/inmemory/repository/command/authorrepository.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/application/inmemory/repository/command/authorrepository.zep.c -o dgafka/bookstore/application/inmemory/repository/command/authorrepository.lo 
+dgafka/bookstore/application/inmemory/repository/command/bookrepository.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/application/inmemory/repository/command/bookrepository.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/application/inmemory/repository/command/bookrepository.zep.c -o dgafka/bookstore/application/inmemory/repository/command/bookrepository.lo 
+dgafka/bookstore/application/inmemory/repository/query/authorrepository.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/application/inmemory/repository/query/authorrepository.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/application/inmemory/repository/query/authorrepository.zep.c -o dgafka/bookstore/application/inmemory/repository/query/authorrepository.lo 
+dgafka/bookstore/application/inmemory/repository/query/bookrepository.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/application/inmemory/repository/query/bookrepository.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/application/inmemory/repository/query/bookrepository.zep.c -o dgafka/bookstore/application/inmemory/repository/query/bookrepository.lo 
+dgafka/bookstore/business/model/entity/author.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/model/entity/author.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/model/entity/author.zep.c -o dgafka/bookstore/business/model/entity/author.lo 
+dgafka/bookstore/business/model/entity/book.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/model/entity/book.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/model/entity/book.zep.c -o dgafka/bookstore/business/model/entity/book.lo 
+dgafka/bookstore/business/service/dto/author.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/author.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/author.zep.c -o dgafka/bookstore/business/service/dto/author.lo 
+dgafka/bookstore/business/service/dto/authorcollection.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/authorcollection.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/authorcollection.zep.c -o dgafka/bookstore/business/service/dto/authorcollection.lo 
+dgafka/bookstore/business/service/dto/book.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/book.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/book.zep.c -o dgafka/bookstore/business/service/dto/book.lo 
+dgafka/bookstore/business/service/dto/bookcollection.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/bookcollection.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/bookcollection.zep.c -o dgafka/bookstore/business/service/dto/bookcollection.lo 
+dgafka/bookstore/business/service/dto/command/author/createcommand.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/command/author/createcommand.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/command/author/createcommand.zep.c -o dgafka/bookstore/business/service/dto/command/author/createcommand.lo 
+dgafka/bookstore/business/service/dto/command/book/changeauthorcommand.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/command/book/changeauthorcommand.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/command/book/changeauthorcommand.zep.c -o dgafka/bookstore/business/service/dto/command/book/changeauthorcommand.lo 
+dgafka/bookstore/business/service/dto/command/book/changeinformationcommand.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/command/book/changeinformationcommand.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/command/book/changeinformationcommand.zep.c -o dgafka/bookstore/business/service/dto/command/book/changeinformationcommand.lo 
+dgafka/bookstore/business/service/dto/command/book/createcommand.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/command/book/createcommand.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/command/book/createcommand.zep.c -o dgafka/bookstore/business/service/dto/command/book/createcommand.lo 
+dgafka/bookstore/business/service/dto/command/book/removecommand.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/command/book/removecommand.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/command/book/removecommand.zep.c -o dgafka/bookstore/business/service/dto/command/book/removecommand.lo 
+dgafka/bookstore/business/service/dto/query/author/getbyidquery.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/query/author/getbyidquery.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/query/author/getbyidquery.zep.c -o dgafka/bookstore/business/service/dto/query/author/getbyidquery.lo 
+dgafka/bookstore/business/service/dto/query/author/getbyquery.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/query/author/getbyquery.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/query/author/getbyquery.zep.c -o dgafka/bookstore/business/service/dto/query/author/getbyquery.lo 
+dgafka/bookstore/business/service/dto/query/book/getbyidquery.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/query/book/getbyidquery.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/query/book/getbyidquery.zep.c -o dgafka/bookstore/business/service/dto/query/book/getbyidquery.lo 
+dgafka/bookstore/business/service/dto/query/book/getbyquery.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/query/book/getbyquery.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/dto/query/book/getbyquery.zep.c -o dgafka/bookstore/business/service/dto/query/book/getbyquery.lo 
+dgafka/bookstore/business/service/factory/author.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/factory/author.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/factory/author.zep.c -o dgafka/bookstore/business/service/factory/author.lo 
+dgafka/bookstore/business/service/factory/book.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/factory/book.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/factory/book.zep.c -o dgafka/bookstore/business/service/factory/book.lo 
+dgafka/bookstore/business/service/handler/authorcommandhandler.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/handler/authorcommandhandler.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/handler/authorcommandhandler.zep.c -o dgafka/bookstore/business/service/handler/authorcommandhandler.lo 
+dgafka/bookstore/business/service/handler/authorqueryhandler.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/handler/authorqueryhandler.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/handler/authorqueryhandler.zep.c -o dgafka/bookstore/business/service/handler/authorqueryhandler.lo 
+dgafka/bookstore/business/service/handler/bookcommandhandler.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/handler/bookcommandhandler.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/handler/bookcommandhandler.zep.c -o dgafka/bookstore/business/service/handler/bookcommandhandler.lo 
+dgafka/bookstore/business/service/handler/bookqueryhandler.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/handler/bookqueryhandler.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/handler/bookqueryhandler.zep.c -o dgafka/bookstore/business/service/handler/bookqueryhandler.lo 
+dgafka/bookstore/business/service/handler/exception/dependencyinjectionexception.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/handler/exception/dependencyinjectionexception.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/handler/exception/dependencyinjectionexception.zep.c -o dgafka/bookstore/business/service/handler/exception/dependencyinjectionexception.lo 
+dgafka/bookstore/business/service/handler/exception/notfoundexception.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/handler/exception/notfoundexception.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/handler/exception/notfoundexception.zep.c -o dgafka/bookstore/business/service/handler/exception/notfoundexception.lo 
+dgafka/bookstore/business/service/repository/command/authorrepository.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/repository/command/authorrepository.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/repository/command/authorrepository.zep.c -o dgafka/bookstore/business/service/repository/command/authorrepository.lo 
+dgafka/bookstore/business/service/repository/command/bookrepository.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/repository/command/bookrepository.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/repository/command/bookrepository.zep.c -o dgafka/bookstore/business/service/repository/command/bookrepository.lo 
+dgafka/bookstore/business/service/repository/query/authorrepository.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/repository/query/authorrepository.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/repository/query/authorrepository.zep.c -o dgafka/bookstore/business/service/repository/query/authorrepository.lo 
+dgafka/bookstore/business/service/repository/query/bookrepository.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/repository/query/bookrepository.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/repository/query/bookrepository.zep.c -o dgafka/bookstore/business/service/repository/query/bookrepository.lo 
+dgafka/bookstore/business/service/service/commandquerybus.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/service/commandquerybus.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/service/commandquerybus.zep.c -o dgafka/bookstore/business/service/service/commandquerybus.lo 
+dgafka/bookstore/business/service/service/converter/author/entitytodto.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/service/converter/author/entitytodto.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/service/converter/author/entitytodto.zep.c -o dgafka/bookstore/business/service/service/converter/author/entitytodto.lo 
+dgafka/bookstore/business/service/service/converter/book/entitytodto.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/service/converter/book/entitytodto.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/service/converter/book/entitytodto.zep.c -o dgafka/bookstore/business/service/service/converter/book/entitytodto.lo 
+dgafka/bookstore/business/service/service/exception/classnotfoundexception.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/service/exception/classnotfoundexception.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/service/exception/classnotfoundexception.zep.c -o dgafka/bookstore/business/service/service/exception/classnotfoundexception.lo 
+$(phplibdir)/dgafka.la: ./dgafka.la
+	$(LIBTOOL) --mode=install cp ./dgafka.la $(phplibdir)
+
+./dgafka.la: $(shared_objects_dgafka) $(DGAFKA_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_dgafka) $(DGAFKA_SHARED_LIBADD)
+

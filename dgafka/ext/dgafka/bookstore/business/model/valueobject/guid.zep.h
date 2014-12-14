@@ -1,0 +1,13 @@
+
+extern zend_class_entry *dgafka_bookstore_business_model_valueobject_guid_ce;
+
+ZEPHIR_INIT_CLASS(Dgafka_BookStore_Business_Model_ValueObject_Guid);
+
+PHP_METHOD(Dgafka_BookStore_Business_Model_ValueObject_Guid, __construct);
+PHP_METHOD(Dgafka_BookStore_Business_Model_ValueObject_Guid, create);
+
+ZEPHIR_INIT_FUNCS(dgafka_bookstore_business_model_valueobject_guid_method_entry) {
+	PHP_ME(Dgafka_BookStore_Business_Model_ValueObject_Guid, __construct, NULL, ZEND_ACC_PRIVATE|ZEND_ACC_CTOR)
+	PHP_ME(Dgafka_BookStore_Business_Model_ValueObject_Guid, create, NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
+  PHP_FE_END
+};

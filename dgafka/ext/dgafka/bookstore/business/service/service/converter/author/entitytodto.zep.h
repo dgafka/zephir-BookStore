@@ -1,0 +1,15 @@
+
+extern zend_class_entry *dgafka_bookstore_business_service_service_converter_author_entitytodto_ce;
+
+ZEPHIR_INIT_CLASS(Dgafka_BookStore_Business_Service_Service_Converter_Author_EntityToDto);
+
+PHP_METHOD(Dgafka_BookStore_Business_Service_Service_Converter_Author_EntityToDto, convert);
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_service_converter_author_entitytodto_convert, 0, 0, 1)
+	ZEND_ARG_OBJ_INFO(0, author, Dgafka\\BookStore\\Business\\Model\\Entity\\Author, 0)
+ZEND_END_ARG_INFO()
+
+ZEPHIR_INIT_FUNCS(dgafka_bookstore_business_service_service_converter_author_entitytodto_method_entry) {
+	PHP_ME(Dgafka_BookStore_Business_Service_Service_Converter_Author_EntityToDto, convert, arginfo_dgafka_bookstore_business_service_service_converter_author_entitytodto_convert, ZEND_ACC_PUBLIC)
+  PHP_FE_END
+};

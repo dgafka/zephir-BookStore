@@ -1,0 +1,15 @@
+
+extern zend_class_entry *dgafka_bookstore_business_service_dto_bookcollection_ce;
+
+ZEPHIR_INIT_CLASS(Dgafka_BookStore_Business_Service_Dto_BookCollection);
+
+PHP_METHOD(Dgafka_BookStore_Business_Service_Dto_BookCollection, __construct);
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_dto_bookcollection___construct, 0, 0, 1)
+	ZEND_ARG_ARRAY_INFO(0, books, 0)
+ZEND_END_ARG_INFO()
+
+ZEPHIR_INIT_FUNCS(dgafka_bookstore_business_service_dto_bookcollection_method_entry) {
+	PHP_ME(Dgafka_BookStore_Business_Service_Dto_BookCollection, __construct, arginfo_dgafka_bookstore_business_service_dto_bookcollection___construct, ZEND_ACC_PUBLIC|ZEND_ACC_CTOR)
+  PHP_FE_END
+};

@@ -1,0 +1,5 @@
+
+extern zend_class_entry *dgafka_bookstore_business_service_service_exception_classnotfoundexception_ce;
+
+ZEPHIR_INIT_CLASS(Dgafka_BookStore_Business_Service_Service_Exception_ClassNotFoundException);
+
