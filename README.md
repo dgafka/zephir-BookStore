@@ -9,6 +9,3 @@ This application is sample application written in zephir. It was created to comp
 
 This application scopes for best optimizalition. If you will find way to optimalize it even more, message me. <br/>
 It will help people looking for good example, improve their skills in writting good optimalized code in zephir.<br/><br/>
-
-
-It's still unfinished yet. Book's handlers must be tested first. Then the second application in clean php will be written.
