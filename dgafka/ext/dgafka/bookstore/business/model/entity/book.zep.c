@@ -71,8 +71,8 @@ PHP_METHOD(Dgafka_BookStore_Business_Model_Entity_Book, __construct) {
 	}
 
 
-	if (!(zephir_is_instance_of(author, SL("Dgafka\\BookStore\\Business\\Model\\Entity\\Dgafka\\BookStore\\Business\\Model\\Entity\\Author") TSRMLS_CC))) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(spl_ce_InvalidArgumentException, "Parameter 'author' must be an instance of 'Dgafka\\BookStore\\Business\\Model\\Entity\\Dgafka\\BookStore\\Business\\Model\\Entity\\Author'", "", 0);
+	if (!(zephir_instance_of_ev(author, dgafka_bookstore_business_model_entity_author_ce TSRMLS_CC))) {
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(spl_ce_InvalidArgumentException, "Parameter 'author' must be an instance of 'Dgafka\\BookStore\\Business\\Model\\Entity\\Author'", "", 0);
 		return;
 	}
 	zephir_update_property_this(this_ptr, SL("id"), id TSRMLS_CC);
@@ -135,8 +135,8 @@ PHP_METHOD(Dgafka_BookStore_Business_Model_Entity_Book, setAuthor) {
 
 
 
-	if (!(zephir_is_instance_of(author, SL("Dgafka\\BookStore\\Business\\Model\\Entity\\Dgafka\\BookStore\\Business\\Model\\Entity\\Author") TSRMLS_CC))) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STRW(spl_ce_InvalidArgumentException, "Parameter 'author' must be an instance of 'Dgafka\\BookStore\\Business\\Model\\Entity\\Dgafka\\BookStore\\Business\\Model\\Entity\\Author'", "", 0);
+	if (!(zephir_instance_of_ev(author, dgafka_bookstore_business_model_entity_author_ce TSRMLS_CC))) {
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STRW(spl_ce_InvalidArgumentException, "Parameter 'author' must be an instance of 'Dgafka\\BookStore\\Business\\Model\\Entity\\Author'", "", 0);
 		return;
 	}
 	zephir_update_property_this(this_ptr, SL("author"), author TSRMLS_CC);

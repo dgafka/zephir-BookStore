@@ -16,19 +16,19 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcom
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_handlecreatecommand, 0, 0, 1)
-	ZEND_ARG_OBJ_INFO(0, command, Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\CreateCommand, 0)
+	ZEND_ARG_OBJ_INFO(0, command, Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\Book\\CreateCommand, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_handlechangeauthorcommand, 0, 0, 1)
-	ZEND_ARG_OBJ_INFO(0, command, Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\ChangeAuthorCommand, 0)
+	ZEND_ARG_OBJ_INFO(0, command, Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\Book\\ChangeAuthorCommand, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_handleremovecommand, 0, 0, 1)
-	ZEND_ARG_OBJ_INFO(0, command, Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\RemoveCommand, 0)
+	ZEND_ARG_OBJ_INFO(0, command, Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\Book\\RemoveCommand, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_handlechangeinformationcommand, 0, 0, 1)
-	ZEND_ARG_OBJ_INFO(0, command, Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\ChangeInformationCommand, 0)
+	ZEND_ARG_OBJ_INFO(0, command, Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\Book\\ChangeInformationCommand, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_service_handler_bookcommandhandler_setbookfactory, 0, 0, 1)

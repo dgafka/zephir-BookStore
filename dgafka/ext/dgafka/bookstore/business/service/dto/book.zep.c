@@ -23,13 +23,13 @@ ZEPHIR_INIT_CLASS(Dgafka_BookStore_Business_Service_Dto_Book) {
 
 	ZEPHIR_REGISTER_CLASS(Dgafka\\BookStore\\Business\\Service\\Dto, Book, dgafka, bookstore_business_service_dto_book, dgafka_bookstore_business_service_dto_book_method_entry, 0);
 
-	zend_declare_property_null(dgafka_bookstore_business_service_dto_book_ce, SL("id"), ZEND_ACC_PRIVATE TSRMLS_CC);
+	zend_declare_property_null(dgafka_bookstore_business_service_dto_book_ce, SL("id"), ZEND_ACC_PUBLIC TSRMLS_CC);
 
-	zend_declare_property_null(dgafka_bookstore_business_service_dto_book_ce, SL("author"), ZEND_ACC_PRIVATE TSRMLS_CC);
+	zend_declare_property_null(dgafka_bookstore_business_service_dto_book_ce, SL("author"), ZEND_ACC_PUBLIC TSRMLS_CC);
 
-	zend_declare_property_null(dgafka_bookstore_business_service_dto_book_ce, SL("name"), ZEND_ACC_PRIVATE TSRMLS_CC);
+	zend_declare_property_null(dgafka_bookstore_business_service_dto_book_ce, SL("name"), ZEND_ACC_PUBLIC TSRMLS_CC);
 
-	zend_declare_property_null(dgafka_bookstore_business_service_dto_book_ce, SL("description"), ZEND_ACC_PRIVATE TSRMLS_CC);
+	zend_declare_property_null(dgafka_bookstore_business_service_dto_book_ce, SL("description"), ZEND_ACC_PUBLIC TSRMLS_CC);
 
 	return SUCCESS;
 

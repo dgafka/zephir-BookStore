@@ -1,7 +1,5 @@
 namespace Dgafka\BookStore\Business\Service\Dto\Command\Book;
 
-use Dgafka\BookStore\Business\Model\Entity;
-
 class CreateCommand
 {
 

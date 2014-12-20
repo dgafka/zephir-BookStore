@@ -25,7 +25,7 @@ prefix = /usr
 phplibdir = /vagrant_data/BookStore/dgafka/ext/modules
 phpincludedir = /usr/include/php5
 CC = gcc
-CFLAGS = -O2 -fvisibility=hidden -Wparentheses -flto -DZEPHIR_RELEASE=1
+CFLAGS = -O0 -g3
 CFLAGS_CLEAN = $(CFLAGS)
 CPP = gcc -E
 CPPFLAGS = -DHAVE_CONFIG_H

@@ -14,7 +14,7 @@ class Book
 
     private description;
 
-    public function __construct(string id, <Dgafka\BookStore\Business\Model\Entity\Author> author, string! name, string! description) {
+    public function __construct(string id, <Author> author, string! name, string! description) {
         let this->id     = id;
         let this->author = author;
         let this->name   = name;
@@ -25,7 +25,7 @@ class Book
         return this->id;
     }
 
-    public function getAuthor() -> <Dgafka\BookStore\Business\Model\Entity\Author> {
+    public function getAuthor() -> <Author> {
         return this->author;
     }
 
@@ -41,7 +41,7 @@ class Book
         let this->id = id;
     }
 
-    public function setAuthor(<Dgafka\BookStore\Business\Model\Entity\Author> author) -> void {
+    public function setAuthor(<Author> author) -> void {
         let this->author = author;
     }
 

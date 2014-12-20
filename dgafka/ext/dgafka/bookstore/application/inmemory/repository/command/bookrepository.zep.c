@@ -77,7 +77,7 @@ PHP_METHOD(Dgafka_BookStore_Application_InMemory_Repository_Command_BookReposito
 PHP_METHOD(Dgafka_BookStore_Application_InMemory_Repository_Command_BookRepository, remove) {
 
 	int ZEPHIR_LAST_CALL_STATUS;
-	zval *book, *_0 = NULL, *_1;
+	zval *book, *_0 = NULL, *_1, *_2 = NULL, *_3;
 
 	ZEPHIR_MM_GROW();
 	zephir_fetch_params(1, 1, 0, &book);
@@ -91,9 +91,13 @@ PHP_METHOD(Dgafka_BookStore_Application_InMemory_Repository_Command_BookReposito
 	ZEPHIR_CALL_METHOD(&_0, book, "getid", NULL);
 	zephir_check_call_status();
 	zephir_update_static_property_array_multi_ce(dgafka_bookstore_application_inmemory_repository_command_bookrepository_ce, SL("books"), &ZEPHIR_GLOBAL(global_null) TSRMLS_CC, SL("z"), 1, _0);
-	ZEPHIR_OBS_VAR(_1);
-	zephir_read_static_property_ce(&_1, dgafka_bookstore_application_inmemory_repository_command_bookrepository_ce, SL("books") TSRMLS_CC);
-	zephir_update_static_property_ce(dgafka_bookstore_application_inmemory_repository_query_bookrepository_ce, SL("books"), &_1 TSRMLS_CC);
+	_1 = zephir_fetch_static_property_ce(dgafka_bookstore_application_inmemory_repository_command_bookrepository_ce, SL("books") TSRMLS_CC);
+	ZEPHIR_CALL_METHOD(&_2, book, "getid", NULL);
+	zephir_check_call_status();
+	zephir_array_unset(&_1, _2, PH_SEPARATE);
+	ZEPHIR_OBS_VAR(_3);
+	zephir_read_static_property_ce(&_3, dgafka_bookstore_application_inmemory_repository_command_bookrepository_ce, SL("books") TSRMLS_CC);
+	zephir_update_static_property_ce(dgafka_bookstore_application_inmemory_repository_query_bookrepository_ce, SL("books"), &_3 TSRMLS_CC);
 	ZEPHIR_MM_RESTORE();
 
 }
@@ -117,7 +121,7 @@ PHP_METHOD(Dgafka_BookStore_Application_InMemory_Repository_Command_BookReposito
 		RETURN_MM_NULL();
 	}
 	_1 = zephir_fetch_static_property_ce(dgafka_bookstore_application_inmemory_repository_command_bookrepository_ce, SL("books") TSRMLS_CC);
-	zephir_array_fetch(&_2, _1, id, PH_NOISY | PH_READONLY, "dgafka/bookStore/application/inMemory/repository/command/bookRepository.zep", 43 TSRMLS_CC);
+	zephir_array_fetch(&_2, _1, id, PH_NOISY | PH_READONLY, "dgafka/bookStore/application/inMemory/repository/command/bookRepository.zep", 44 TSRMLS_CC);
 	RETURN_CTOR(_2);
 
 }

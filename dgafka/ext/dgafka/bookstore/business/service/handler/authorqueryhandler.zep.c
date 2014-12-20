@@ -19,7 +19,6 @@
 #include "kernel/operators.h"
 #include "kernel/hash.h"
 #include "kernel/array.h"
-#include "kernel/variables.h"
 
 
 ZEPHIR_INIT_CLASS(Dgafka_BookStore_Business_Service_Handler_AuthorQueryHandler) {
@@ -99,7 +98,6 @@ PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_AuthorQueryHandler, handleG
 	object_init_ex(authorCollection, dgafka_bookstore_business_service_dto_authorcollection_ce);
 	ZEPHIR_CALL_METHOD(NULL, authorCollection, "__construct", NULL, authorResults);
 	zephir_check_call_status();
-	zephir_var_dump(&authorCollection TSRMLS_CC);
 	RETURN_CCTOR(authorCollection);
 
 }
@@ -124,7 +122,7 @@ PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_AuthorQueryHandler, handleG
 	ZEPHIR_CALL_METHOD(&author, _0, "findbyid", NULL, _1);
 	zephir_check_call_status();
 	if (!(zephir_instance_of_ev(author, dgafka_bookstore_business_model_entity_author_ce TSRMLS_CC))) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_notfoundexception_ce, "Results not found.", "dgafka/bookStore/business/service/handler/AuthorQueryHandler.zep", 45);
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_notfoundexception_ce, "Results not found.", "dgafka/bookStore/business/service/handler/AuthorQueryHandler.zep", 44);
 		return;
 	}
 	_2 = zephir_fetch_nproperty_this(this_ptr, SL("converter"), PH_NOISY_CC);

@@ -28,6 +28,7 @@ class BookRepository implements Command\BookRepository
     */
     public function remove(<Entity\Book> book) -> void {
         let self::books[book->getId()] = null;
+        unset(self::books[book->getId()]);
 
         let Query\BookRepository::books = self::books;
     }

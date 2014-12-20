@@ -60,8 +60,8 @@ PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleC
 
 
 
-	if (!(zephir_is_instance_of(command, SL("Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\CreateCommand") TSRMLS_CC))) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(spl_ce_InvalidArgumentException, "Parameter 'command' must be an instance of 'Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\CreateCommand'", "", 0);
+	if (!(zephir_instance_of_ev(command, dgafka_bookstore_business_service_dto_command_book_createcommand_ce TSRMLS_CC))) {
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(spl_ce_InvalidArgumentException, "Parameter 'command' must be an instance of 'Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\Book\\CreateCommand'", "", 0);
 		return;
 	}
 	_0 = zephir_fetch_nproperty_this(this_ptr, SL("authorRepository"), PH_NOISY_CC);
@@ -71,7 +71,7 @@ PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleC
 		_1 = !zephir_is_true(_2);
 	}
 	if (_1) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_dependencyinjectionexception_ce, "Inject all dependencies, via setter first.", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 23);
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_dependencyinjectionexception_ce, "Inject all dependencies, via setter first.", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 24);
 		return;
 	}
 	_3 = zephir_fetch_nproperty_this(this_ptr, SL("authorRepository"), PH_NOISY_CC);
@@ -79,8 +79,8 @@ PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleC
 	zephir_read_property(&_4, command, SL("author"), PH_NOISY_CC);
 	ZEPHIR_CALL_METHOD(&author, _3, "findbyid", NULL, _4);
 	zephir_check_call_status();
-	if (!zephir_is_true(author)) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_notfoundexception_ce, "Author doesn't exist", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 28);
+	if (!(zephir_instance_of_ev(author, dgafka_bookstore_business_model_entity_author_ce TSRMLS_CC))) {
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_notfoundexception_ce, "Author doesn't exist", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 29);
 		return;
 	}
 	_5 = zephir_fetch_nproperty_this(this_ptr, SL("factory"), PH_NOISY_CC);
@@ -109,31 +109,31 @@ PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleC
 
 
 
-	if (!(zephir_is_instance_of(command, SL("Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\ChangeAuthorCommand") TSRMLS_CC))) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(spl_ce_InvalidArgumentException, "Parameter 'command' must be an instance of 'Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\ChangeAuthorCommand'", "", 0);
+	if (!(zephir_instance_of_ev(command, dgafka_bookstore_business_service_dto_command_book_changeauthorcommand_ce TSRMLS_CC))) {
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(spl_ce_InvalidArgumentException, "Parameter 'command' must be an instance of 'Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\Book\\ChangeAuthorCommand'", "", 0);
 		return;
 	}
 	_0 = zephir_fetch_nproperty_this(this_ptr, SL("authorRepository"), PH_NOISY_CC);
 	if (!zephir_is_true(_0)) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_dependencyinjectionexception_ce, "Inject all dependencies, via setter first.", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 39);
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_dependencyinjectionexception_ce, "Inject all dependencies, via setter first.", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 41);
 		return;
 	}
 	_1 = zephir_fetch_nproperty_this(this_ptr, SL("authorRepository"), PH_NOISY_CC);
 	ZEPHIR_OBS_VAR(_2);
-	zephir_read_property(&_2, command, SL("author"), PH_NOISY_CC);
+	zephir_read_property(&_2, command, SL("authorId"), PH_NOISY_CC);
 	ZEPHIR_CALL_METHOD(&author, _1, "findbyid", NULL, _2);
 	zephir_check_call_status();
-	if (!zephir_is_true(author)) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_notfoundexception_ce, "Author doesn't exist", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 44);
+	if (!(zephir_instance_of_ev(author, dgafka_bookstore_business_model_entity_author_ce TSRMLS_CC))) {
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_notfoundexception_ce, "Author doesn't exist", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 46);
 		return;
 	}
 	_3 = zephir_fetch_nproperty_this(this_ptr, SL("bookRepository"), PH_NOISY_CC);
 	ZEPHIR_OBS_VAR(_4);
-	zephir_read_property(&_4, command, SL("id"), PH_NOISY_CC);
+	zephir_read_property(&_4, command, SL("bookId"), PH_NOISY_CC);
 	ZEPHIR_CALL_METHOD(&book, _3, "findbyid", NULL, _4);
 	zephir_check_call_status();
-	if (!(zephir_is_instance_of(book, SL("Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\RemoveCommand") TSRMLS_CC))) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_notfoundexception_ce, "Book doesn't exist.", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 49);
+	if (!(zephir_instance_of_ev(book, dgafka_bookstore_business_model_entity_book_ce TSRMLS_CC))) {
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_notfoundexception_ce, "Book doesn't exist.", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 52);
 		return;
 	}
 	ZEPHIR_CALL_METHOD(NULL, book, "setauthor", NULL, author);
@@ -155,8 +155,8 @@ PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleR
 
 
 
-	if (!(zephir_is_instance_of(command, SL("Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\RemoveCommand") TSRMLS_CC))) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(spl_ce_InvalidArgumentException, "Parameter 'command' must be an instance of 'Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\RemoveCommand'", "", 0);
+	if (!(zephir_instance_of_ev(command, dgafka_bookstore_business_service_dto_command_book_removecommand_ce TSRMLS_CC))) {
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(spl_ce_InvalidArgumentException, "Parameter 'command' must be an instance of 'Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\Book\\RemoveCommand'", "", 0);
 		return;
 	}
 	_0 = zephir_fetch_nproperty_this(this_ptr, SL("bookRepository"), PH_NOISY_CC);
@@ -164,8 +164,8 @@ PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleR
 	zephir_read_property(&_1, command, SL("id"), PH_NOISY_CC);
 	ZEPHIR_CALL_METHOD(&book, _0, "findbyid", NULL, _1);
 	zephir_check_call_status();
-	if (!(zephir_is_instance_of(book, SL("Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\RemoveCommand") TSRMLS_CC))) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_notfoundexception_ce, "Book doesn't exist.", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 62);
+	if (!(zephir_instance_of_ev(book, dgafka_bookstore_business_model_entity_book_ce TSRMLS_CC))) {
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_notfoundexception_ce, "Book doesn't exist.", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 65);
 		return;
 	}
 	_2 = zephir_fetch_nproperty_this(this_ptr, SL("bookRepository"), PH_NOISY_CC);
@@ -185,8 +185,8 @@ PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleC
 
 
 
-	if (!(zephir_is_instance_of(command, SL("Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\ChangeInformationCommand") TSRMLS_CC))) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(spl_ce_InvalidArgumentException, "Parameter 'command' must be an instance of 'Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\ChangeInformationCommand'", "", 0);
+	if (!(zephir_instance_of_ev(command, dgafka_bookstore_business_service_dto_command_book_changeinformationcommand_ce TSRMLS_CC))) {
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(spl_ce_InvalidArgumentException, "Parameter 'command' must be an instance of 'Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\Book\\ChangeInformationCommand'", "", 0);
 		return;
 	}
 	_0 = zephir_fetch_nproperty_this(this_ptr, SL("bookRepository"), PH_NOISY_CC);
@@ -194,8 +194,8 @@ PHP_METHOD(Dgafka_BookStore_Business_Service_Handler_BookCommandHandler, handleC
 	zephir_read_property(&_1, command, SL("id"), PH_NOISY_CC);
 	ZEPHIR_CALL_METHOD(&book, _0, "findbyid", NULL, _1);
 	zephir_check_call_status();
-	if (!(zephir_is_instance_of(book, SL("Dgafka\\BookStore\\Business\\Service\\Dto\\Command\\RemoveCommand") TSRMLS_CC))) {
-		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_notfoundexception_ce, "Book doesn't exist.", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 74);
+	if (!(zephir_instance_of_ev(book, dgafka_bookstore_business_model_entity_book_ce TSRMLS_CC))) {
+		ZEPHIR_THROW_EXCEPTION_DEBUG_STR(dgafka_bookstore_business_service_handler_exception_notfoundexception_ce, "Book doesn't exist.", "dgafka/bookStore/business/service/handler/BookCommandHandler.zep", 77);
 		return;
 	}
 	ZEPHIR_OBS_VAR(_2);

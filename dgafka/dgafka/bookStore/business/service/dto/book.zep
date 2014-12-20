@@ -4,13 +4,13 @@ namespace Dgafka\BookStore\Business\Service\Dto;
 class Book
 {
 
-    private id;
+    public id;
 
-    private author;
+    public author;
 
-    private name;
+    public name;
 
-    private description;
+    public description;
 
     public function __construct(string id, <Author> author, string! name, string! description) {
         let this->id            = id;

@@ -15,7 +15,7 @@ PHP_METHOD(Dgafka_BookStore_Business_Model_Entity_Book, setDescription);
 
 ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_model_entity_book___construct, 0, 0, 4)
 	ZEND_ARG_INFO(0, id)
-	ZEND_ARG_OBJ_INFO(0, author, Dgafka\\BookStore\\Business\\Model\\Entity\\Dgafka\\BookStore\\Business\\Model\\Entity\\Author, 0)
+	ZEND_ARG_OBJ_INFO(0, author, Dgafka\\BookStore\\Business\\Model\\Entity\\Author, 0)
 	ZEND_ARG_INFO(0, name)
 	ZEND_ARG_INFO(0, description)
 ZEND_END_ARG_INFO()
@@ -25,7 +25,7 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_model_entity_book_setid
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_model_entity_book_setauthor, 0, 0, 1)
-	ZEND_ARG_OBJ_INFO(0, author, Dgafka\\BookStore\\Business\\Model\\Entity\\Dgafka\\BookStore\\Business\\Model\\Entity\\Author, 0)
+	ZEND_ARG_OBJ_INFO(0, author, Dgafka\\BookStore\\Business\\Model\\Entity\\Author, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(arginfo_dgafka_bookstore_business_model_entity_book_setname, 0, 0, 1)
