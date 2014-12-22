@@ -108,6 +108,8 @@ dgafka/bookstore/business/service/service/converter/book/entitytodto.lo: /vagran
 	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/service/converter/book/entitytodto.zep.c -o dgafka/bookstore/business/service/service/converter/book/entitytodto.lo 
 dgafka/bookstore/business/service/service/exception/classnotfoundexception.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/service/exception/classnotfoundexception.zep.c
 	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/bookstore/business/service/service/exception/classnotfoundexception.zep.c -o dgafka/bookstore/business/service/service/exception/classnotfoundexception.lo 
+dgafka/test/test.lo: /vagrant_data/BookStore/dgafka/ext/dgafka/test/test.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/vagrant_data/BookStore/dgafka/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /vagrant_data/BookStore/dgafka/ext/dgafka/test/test.zep.c -o dgafka/test/test.lo 
 $(phplibdir)/dgafka.la: ./dgafka.la
 	$(LIBTOOL) --mode=install cp ./dgafka.la $(phplibdir)
 

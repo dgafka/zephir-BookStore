@@ -22,5 +22,6 @@ if (PHP_DGAFKA != "no") {
 	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/service/converter/author", "entitytodto.zep.c", "dgafka");
 	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/service/converter/book", "entitytodto.zep.c", "dgafka");
 	ADD_SOURCES(configure_module_dirname + "/dgafka/bookstore/business/service/service/exception", "classnotfoundexception.zep.c", "dgafka");
+	ADD_SOURCES(configure_module_dirname + "/dgafka/test", "test.zep.c", "dgafka");
   ADD_FLAG("CFLAGS_DGAFKA", "/D ZEPHIR_RELEASE");
 }

@@ -61,6 +61,7 @@ zend_class_entry *dgafka_bookstore_business_service_service_commandquerybus_ce;
 zend_class_entry *dgafka_bookstore_business_service_service_converter_author_entitytodto_ce;
 zend_class_entry *dgafka_bookstore_business_service_service_converter_book_entitytodto_ce;
 zend_class_entry *dgafka_bookstore_business_service_service_exception_classnotfoundexception_ce;
+zend_class_entry *dgafka_test_test_ce;
 
 ZEND_DECLARE_MODULE_GLOBALS(dgafka)
 
@@ -117,6 +118,7 @@ static PHP_MINIT_FUNCTION(dgafka)
 	ZEPHIR_INIT(Dgafka_BookStore_Business_Service_Service_Converter_Author_EntityToDto);
 	ZEPHIR_INIT(Dgafka_BookStore_Business_Service_Service_Converter_Book_EntityToDto);
 	ZEPHIR_INIT(Dgafka_BookStore_Business_Service_Service_Exception_ClassNotFoundException);
+	ZEPHIR_INIT(Dgafka_Test_Test);
 
 #if PHP_VERSION_ID < 50500
 	setlocale(LC_ALL, old_lc_all);

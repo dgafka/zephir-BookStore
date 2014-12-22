@@ -43,7 +43,8 @@ if test "$PHP_DGAFKA" = "yes"; then
 	dgafka/bookstore/business/service/service/commandquerybus.zep.c
 	dgafka/bookstore/business/service/service/converter/author/entitytodto.zep.c
 	dgafka/bookstore/business/service/service/converter/book/entitytodto.zep.c
-	dgafka/bookstore/business/service/service/exception/classnotfoundexception.zep.c "
+	dgafka/bookstore/business/service/service/exception/classnotfoundexception.zep.c
+	dgafka/test/test.zep.c "
 	PHP_NEW_EXTENSION(dgafka, $dgafka_sources, $ext_shared,, )
 	PHP_SUBST(DGAFKA_SHARED_LIBADD)
 

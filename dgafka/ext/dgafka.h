@@ -39,5 +39,6 @@
 #include "dgafka/bookstore/business/service/service/converter/author/entitytodto.zep.h"
 #include "dgafka/bookstore/business/service/service/converter/book/entitytodto.zep.h"
 #include "dgafka/bookstore/business/service/service/exception/classnotfoundexception.zep.h"
+#include "dgafka/test/test.zep.h"
 
 #endif

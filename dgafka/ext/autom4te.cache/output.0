@@ -4069,7 +4069,8 @@ $as_echo "@%:@define HAVE_DGAFKA 1" >>confdefs.h
 	dgafka/bookstore/business/service/service/commandquerybus.zep.c
 	dgafka/bookstore/business/service/service/converter/author/entitytodto.zep.c
 	dgafka/bookstore/business/service/service/converter/book/entitytodto.zep.c
-	dgafka/bookstore/business/service/service/exception/classnotfoundexception.zep.c "
+	dgafka/bookstore/business/service/service/exception/classnotfoundexception.zep.c
+	dgafka/test/test.zep.c "
 	
   ext_builddir=.
   ext_srcdir=$abs_srcdir
